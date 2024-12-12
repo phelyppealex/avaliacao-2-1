@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de crédito</title>
+</head>
+<body>
+    <h1>Teste de crédito</h1>
+    <form action="/predict" method="post">
+        <b>Sexo:</b>
+        <select name="sexo" id="" required>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select><br>
+
+        <b>Dependentes:</b> 
+        <select name="dependentes" id="" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3 ou mais</option>
+        </select><br>
+
+        <b>Casado:</b><br>
+        Sim<input type="radio" id="html" name="casado" value="Sim" required><br>
+        Não<input type="radio" id="html" name="casado" value="Não"><br>
+
+        <b>Autônomo:</b><br>
+        Sim<input type="radio" id="html" name="autonomo" value="Sim" required><br>
+        Não<input type="radio" id="html" name="autonomo" value="Não"><br>
+
+        <b>Rendimento:</b>
+        <input type="number" name="rendimento" required><br>
+
+        <b>Educacao:</b><br>
+        Sim<input type="radio" id="html" name="educacao" value="Graduado" required><br>
+        Não<input type="radio" id="html" name="educacao" value="Não-graduado"><br>
+
+        <b>Valor do empréstimo:</b>
+        <input type="number" name="valoremprestimo" required><br>
+
+        <button type="submit" name="educacao">Avaliar crédito</button>
+    </form>
+</body>
+</html>
